@@ -84,4 +84,18 @@ function Laptop(name, manufactureDate, color) {
 let mx101010 = new Laptop("Lenovo", "2008", "black");
 let mx101011 = new Laptop("Asus", "2015", "pink");
 
-console.log(mx101010);
+// console.log(mx101010);
+
+function Pokemon(name, level, type) {
+	this.pokemonName = name;
+	this.pokemonLevel = level;
+	this.pkemonHealth = 80 * level;
+	this.pokemonType = type;
+	this.attack = function (targetPokemon) {
+		console.log(this.pokemonName + " attacked " + targetPokemon.pokemonName);
+	};
+}
+
+let charmander = new Pokemon("Charmander", 8, "Fire");
+
+console.log(charmander);
