@@ -144,3 +144,33 @@ console.log(player);
 delete player.height;
 delete player.talent;
 console.log(player);
+
+//How to access a property/method of an Object.
+
+//1st method using (.)dot notation.
+console.log(computer.color);
+console.log(player.skill);
+console.log(person.location.city);
+
+//what if you try to access a property of an object that does NOT EXIST?
+console.log(player.talent);
+
+let car = Object();
+
+car.name = "Honda Civic";
+car.color = "Red";
+
+let mobile = {};
+mobile.name = "Samsung";
+mobile.network = "Globe";
+
+console.log(car);
+console.log(mobile);
+
+let manufacturer = "manufacturer";
+//lets discuss another method on how to add object properties.
+car["manufacture date"] = 2019;
+mobile["number"] = "09951663557";
+car[manufacturer] = "Honda"; //it reads the data as a variable.
+console.log(car);
+console.log(mobile);
