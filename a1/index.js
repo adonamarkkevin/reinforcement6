@@ -1,13 +1,39 @@
-function Pokemon(name, level, type) {
-	this.pokemonName = name;
-	this.pokemonLevel = level;
-	this.pkemonHealth = 80 * level;
-	this.pokemonType = type;
-	this.attack = function (targetPokemon) {
-		console.log(this.pokemonName + " attacked " + targetPokemon.pokemonName);
-	};
+//Template for each pokemon
+
+//pokemon blueprint tempalte
+function Pokemon(name, lvl, front, back) {
+	this.name = name;
+	this.level = lvl;
+	this.health = 50 * lvl;
+	this.imageFront = front;
+	this.imageBack = back;
 }
 
-let charmander = new Pokemon("Charmander", 8, "Fire");
+//template for each paying area
+function Battlefield(bg, name) {
+	this.background = bg;
+	this.name = name;
+}
 
-console.log(charmander);
+//list of playable pokemon
+const mewtwo = new Pokemon("Mew Two", 2, "image", "image");
+const articuno = new Pokemon("Articuno", 2, "image", "image");
+
+//list of fields
+const backyard = new Battlefield("image", "backyard");
+const volcano = new Battlefield("image", "Volcano");
+
+//Object Container
+
+//battlefield container
+const areas = Array();
+areas[0] = backyard;
+areas[1] = volcano;
+
+//characters container
+const characters = [];
+let a = (characters[0] = articuno);
+let b = (characters[1] = mewtwo);
+
+console.log(areas);
+console.log(characters);

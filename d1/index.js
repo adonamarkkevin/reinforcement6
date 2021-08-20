@@ -150,7 +150,7 @@ console.log(player);
 //1st method using (.)dot notation.
 console.log(computer.color);
 console.log(player.skill);
-console.log(person.location.city);
+console.log(Person.location.city);
 
 //what if you try to access a property of an object that does NOT EXIST?
 console.log(player.talent);
@@ -174,3 +174,5 @@ mobile["number"] = "09951663557";
 car[manufacturer] = "Honda"; //it reads the data as a variable.
 console.log(car);
 console.log(mobile);
+
+console.log(Person["location"]["city"]);
