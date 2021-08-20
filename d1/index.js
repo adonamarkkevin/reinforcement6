@@ -99,3 +99,48 @@ function Pokemon(name, level, type) {
 let charmander = new Pokemon("Charmander", 8, "Fire");
 
 console.log(charmander);
+
+///RECAP
+let Person = {
+	name: "John",
+	weigth: "50kg",
+	height: "168cm",
+	location: {
+		city: "Metro Manila",
+		region: "NCR",
+	},
+	walk: function () {
+		console.log("walking");
+	},
+	talk: function () {
+		console.log("talking");
+	},
+};
+
+console.log(Person);
+
+//2nd method
+let computer = Object({
+	weigth: "80grams",
+	color: "white",
+}); //an object structure will be created
+
+console.log(computer);
+console.log(typeof computer);
+
+let player = Object();
+player.height = "189cm";
+player.skill = "basketball";
+player.talent = "singing";
+
+//console.log(player);
+//console.log(typeof player);
+
+//reassign a value;
+player.talent = "Dancing";
+console.log(player);
+
+//delete a propety of an object.
+delete player.height;
+delete player.talent;
+console.log(player);
