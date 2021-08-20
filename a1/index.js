@@ -27,8 +27,8 @@ const volcano = new Battlefield("image", "Volcano");
 
 //battlefield container
 const areas = Array();
-areas[0] = backyard;
-areas[1] = volcano;
+let x = (areas[0] = backyard);
+let y = (areas[1] = volcano);
 
 //characters container
 const characters = [];
@@ -37,3 +37,8 @@ let b = (characters[1] = mewtwo);
 
 console.log(areas);
 console.log(characters);
+
+//function display interaction
+function battle() {
+	console.log("battle");
+}
