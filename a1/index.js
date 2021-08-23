@@ -40,5 +40,8 @@ console.log(characters);
 
 //function display interaction
 function battle() {
-	console.log("battle");
+	let game = document.querySelector("#game");
+	game.innerHTML = <h4>Missing both players</h4>;
 }
+
+battle();
