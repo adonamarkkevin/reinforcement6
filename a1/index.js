@@ -156,8 +156,8 @@ function selectPokemon(pokemon) {
 	}
 	if (document.querySelector("#char-display").children.length == 0) {
 		document.querySelector("#char-display").appendChild(img);
-		document.querySelector("#char-display").innerHTML = `
-        <h4>${name}<h4>
-        `;
+		// document.querySelector("#char-display").innerHTML = `
+		// <h4>${name}<h4>
+		// `;
 	}
 }
