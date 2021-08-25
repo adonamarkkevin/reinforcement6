@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,900,700);
+#char-slct-scrn {
+	font-family: "Orbitron", sans-serif;
+}
+
+legend {
+	color: navy;
+}
+
+label {
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+
+label:hover {
+	filter: grayscale(0);
+}
+input[type="radio"]:checked + label {
+	filter: grayscale(0);
+}
+#char-pick img {
+	height: 150px;
+	width: 150px;
+	border: 3px groove orange;
+	padding: 10px;
+	margin: 2.5px;
+}
+
+#char-display {
+	height: 360px;
+	width: 360px;
+	border-radius: 5px;
+	border: 3px solid navy;
+}
+
+#char-display img {
+	height: 300px;
+	width: 300px;
+	border: none;
+}
+
+#char-option {
+	height: 360px;
+	border: 3px solid navy;
+}

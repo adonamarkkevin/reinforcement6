@@ -24,6 +24,19 @@ const blastoise = new Pokemon(
 	"blastoiseBack.gif"
 );
 const lugia = new Pokemon("Lugia", 2, "lugia.gif", "lugiaBack.gif");
+const charmander = new Pokemon(
+	"Charmander",
+	2,
+	"charmander.gif",
+	"charmanderBack.gif"
+);
+const mew = new Pokemon("Mew", 2, "mewFront.gif", "mewback.gif");
+const venusaur = new Pokemon(
+	"Venusaur",
+	2,
+	"venusaurFront.gif",
+	"venusaurBack.gif"
+);
 
 //List of playing area.
 const backyard = new Battlefield("image", "Backyard");
@@ -115,34 +128,36 @@ function battle(contestant1, contestant2) {
 
 function play(player1, player2) {
 	let game = document.getElementById("game");
-	// 	let pokemon = characters.map(function (element) {
-	// 		//what if i want to place each element inside the array inside a html container?
-	// 		//lets try to remove the comma(,) which separates each element inside an array.
-	// 		for (pokemonCount = 0; pokemonCount < characters.length; pokemonCount++) {
-	// 			return (game.innerHTML = `
-	//                    <h6>${element.name}</h6>
-	//                `);
-	// 		}
-	// 	});
-	// 	pokemon = pokemon.join(" ");
-	// 	game.innerHTML = `Select Players! \n
-	//        ${pokemon}
-	//    `;
-	// 	player1 = prompt("Select Player 1");
-	// 	player2 = prompt("Select Player 2");
 	// prompt("Select Player 1");
-	if (!player1 && !player2) {
-		//lets try to get the user's selection.
-		//how do we convert a string data type into a variable.
-		// console.log(typeof player1);
-		// player1 = eval(player1);
-		// console.log(typeof player1);
-		// let pc = prompt("Select Oponent");
-		//battle(player1, pc);
-		play();
-	} else {
-		battle(player1, player2);
-	}
+	// if (!player1 && !player2) {
+	// 	//lets try to get the user's selection.
+	// 	//how do we convert a string data type into a variable.
+	// 	// console.log(typeof player1);
+	// 	// player1 = eval(player1);
+	// 	// console.log(typeof player1);
+	// 	// let pc = prompt("Select Oponent");
+	// 	//battle(player1, pc);
+	// 	play();
+	// } else {
+	// 	battle(player1, player2);
+	// }
 }
 
-play(blastoise, articuno);
+play();
+
+function selectPokemon(pokemon) {
+	let img = document.createElement("img");
+	img.src = pokemon["imageFront"];
+	let olddata = document.getElementById("char-display").lastChild;
+	let name = pokemon.name;
+
+	if (document.querySelector("#char-display").children.length > 0) {
+		document.querySelector("#char-display").removeChild(olddata);
+	}
+	if (document.querySelector("#char-display").children.length == 0) {
+		document.querySelector("#char-display").appendChild(img);
+		document.querySelector("#char-display").innerHTML = `
+        <h4>${name}<h4>
+        `;
+	}
+}

@@ -13,6 +13,9 @@
 			crossorigin="anonymous"
 		/>
 		<title>Pokemon for Reinforcement</title>
+
+		<!-- css external -->
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<div class="container" id="field">
@@ -28,6 +31,129 @@
 				<div class="col">
 					<div class="container" id="healthIndicator2"></div>
 				</div>
+			</div>
+			<div class="container" id="char-slct-scrn">
+				<div class="row" id="char-srn">
+					<legend class="text-center">Please select your Pokemon</legend>
+					<div class="col-4" id="char-pick">
+						<div class="container" id="char-display"></div>
+					</div>
+					<div class="col-8" id="char-pick">
+						<div class="container" id="char-option">
+							<form class="justify-content-around p-2">
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="articuno"
+								/>
+								<label
+									for="articuno"
+									class="playerChoices"
+									onclick="selectPokemon(articuno)"
+								>
+									<img
+										src="./images/articuno.png"
+										alt="articuno"
+										height="150"
+									/>
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="blastoise"
+								/>
+								<label
+									for="blastoise"
+									class="playerChoices"
+									onclick="selectPokemon(blastoise)"
+								>
+									<img
+										src="./images/blastoise.png"
+										alt="blastoise"
+										height="150"
+									/>
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="charmander"
+								/>
+								<label
+									for="charmander"
+									class="playerChoices"
+									onclick="selectPokemon(charmander)"
+								>
+									<img
+										src="./images/charmander.png"
+										alt="charmander"
+										height="150"
+									/>
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="lugia"
+								/>
+								<label
+									for="lugia"
+									class="playerChoices"
+									onclick="selectPokemon(lugia)"
+								>
+									<img src="./images/lugia.png" alt="lugia" height="150" />
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="mew"
+								/>
+								<label
+									for="mew"
+									class="playerChoices"
+									onclick="selectPokemon(mew)"
+								>
+									<img src="./images/mew.png" alt="mew" height="150" />
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="mewtwo"
+								/>
+								<label
+									for="mewtwo"
+									class="playerChoices"
+									onclick="selectPokemon(mewtwo)"
+								>
+									<img src="./images/mewtwo.png" alt="mew" height="150" />
+								</label>
+								<input
+									type="radio"
+									name="p1-pokemon"
+									class="sr-only"
+									id="venusaur"
+								/>
+								<label
+									for="venusaur"
+									class="playerChoices"
+									onclick="selectPokemon(venusaur)"
+								>
+									<img src="./images/venusaur.png" alt="mew" height="150" />
+								</label>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row" id="choosePokemon">
+					<input type="button" value="submit" />
+					<label for="submit">Player</label>
+					<input type="button" value="submit" />
+					<label for="submit">Opponnent</label>
+				</div> -->
 			</div>
 		</div>
 
