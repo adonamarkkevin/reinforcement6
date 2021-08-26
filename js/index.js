@@ -1,5 +1,6 @@
 //[OJECT BLUEPRINT TEMPLATE]
-const myForm = document.querySelector(".form-group")
+
+// const value for name, type, level, photo location, and button
 const pokeName = document.querySelector("#nValue")
 const pokeType = document.querySelector("#tValue")
 const pokeLevel = document.querySelector("#lValue")
@@ -64,29 +65,32 @@ function showPage() {
 
 //select pokemon funtion
 function selectPokemon(pokemon) {
-  if(playerLockIn.hasAttribute('data-selected-pokemon') != true) {
-    var x = pokeName
-        y = pokeType 
-        z = pokeLevel 
-        p = pokePic
+  if(playerLockIn.hasAttribute('data-selected-pokemon') != true) { //check the value of player lock in attribute
+    var x = pokeName //placed on a variable the const value of pokeName
+        y = pokeType //placed on a variable the const value of pokeType
+        z = pokeLevel //placed on a variable the const value of pokeLevel
+        p = pokePic //placed on a variable the const value of pokePic
   }
   else {
-    var x = cpuName
-        y = cpuType
-        z = cpuLevel
-        p = cpuPic
+    var x = cpuName //placed on a variable the const value of cpuName
+        y = cpuType //placed on a variable the const value of cpuType
+        z = cpuLevel //placed on a variable the const value of cpuLevel
+        p = cpuPic //placed on a variable the const value of cpuPic
   }
-
+  //output for images, name, type and level
   p.src=pokemon["imageFront"];
   x.innerHTML = pokemon.name;
   y.innerHTML = pokemon.type;
   z.innerHTML = pokemon.level;
 }
 
+// function to get the value of player or CPU
 function characterSelection (player) {
   if (player == "player1") {
+    //onclick function to get the data attribute of player
     playerLockIn.setAttribute('data-selected-pokemon', pokeName.innerText)
   } else {
+    //onclick function to get the data attribute of player
     opponentLockIn.setAttribute('data-selected-pokemon', pokeName.innerText)
   }
 }
