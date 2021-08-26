@@ -15,6 +15,7 @@ function Pokemon(name, lvl,front,back,hp) {
     this.health = 50 * lvl;
     this.imageFront = `./images/` + front;
     this.imageBack = `./images/` + back;
+    this.pokemonType = pokemonType;
 }
 
 //battle field
