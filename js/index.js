@@ -24,8 +24,15 @@ function Pokemon(name, poketype, lvl, front, back) {
 
 //Create a template for each playing area.
 function Battlefield(bg, name) {
-	this.background = bg;
 	this.name = name;
+	this.background = "./images/" + bg;
+}
+
+//Create player's and CPU pokemon object constructor
+pokeData = {
+  step: 1,
+  player: {},
+  cpu: {},
 }
 
 //List of playable characters.
@@ -53,6 +60,8 @@ const venusaur = new Pokemon(
 	"venusaurFront.gif",
 	"venusaurBack.gif"
 );
+// list of battlefield
+const city = new Battlefield ("city", "city.jpg")
 
 //loading screen
 function loadingScreen() {
@@ -65,11 +74,12 @@ function showPage() {
 
 //select pokemon funtion
 function selectPokemon(pokemon) {
-  if(playerLockIn.hasAttribute('data-selected-pokemon') != true) { //check the value of player lock in attribute
+  if(playerLockIn.hasAttribute('data-selected-pokemon') !== true) { //check the value of player lock in attribute
     var x = pokeName //placed on a variable the const value of pokeName
         y = pokeType //placed on a variable the const value of pokeType
         z = pokeLevel //placed on a variable the const value of pokeLevel
         p = pokePic //placed on a variable the const value of pokePic
+        
   }
   else {
     var x = cpuName //placed on a variable the const value of cpuName
@@ -88,9 +98,12 @@ function selectPokemon(pokemon) {
 function characterSelection (player) {
   if (player == "player1") {
     //onclick function to get the data attribute of player
-    playerLockIn.setAttribute('data-selected-pokemon', pokeName.innerText)
+    playerLockIn.setAttribute('data-selected-pokemon', pokeName.innerText);
+    document.querySelector("#pick-message").innerHTML = "Select Your Opponent"
   } else {
     //onclick function to get the data attribute of player
-    opponentLockIn.setAttribute('data-selected-pokemon', pokeName.innerText)
+    cpuLockIn.setAttribute('data-selected-pokemon', pokeName.innerText);
+    document.querySelector("#pick-message").innerHTML = 'Please Click "Select Arena"'; 
   }
 }
+//end of pokemon choices

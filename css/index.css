@@ -49,6 +49,13 @@ a.btn.lockin {
     border: 3px solid #732828;
 }
 
+#playerLockIn:disabled {
+	z-index:-1;            
+    position:relative;
+    opacity: .5;
+	filter: grayscale(100%);
+}
+
 .home-container,
 .selectChar-main {
 	background-image: url(../images/home-bg.jpg);
@@ -200,4 +207,10 @@ label.playerChoices:hover {
 	margin: 0 10px;
 	border: 4px solid #732828 !important;
 	border-radius: 5px;
+	filter: grayscale(100%);
+	transition: .3s;
+}
+.arena-items:hover {
+	transform: scale(1);
+	filter: grayscale(0);
 }
