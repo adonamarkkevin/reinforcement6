@@ -113,13 +113,16 @@ function selectPokemon(pokemon) {
 		var y = pokeType; //placed on a variable the const value of pokeType
 		var z = pokeLevel; //placed on a variable the const value of pokeLevel
 		var p = pokePic; //placed on a variable the const value of pokePic
+		document.getElementById('player1Pokemon').classList.add('player1-active');
 	} else {
 		var x = cpuName; //placed on a variable the const value of cpuName
 		var y = cpuType; //placed on a variable the const value of cpuType
 		var z = cpuLevel; //placed on a variable the const value of cpuLevel
 		var p = cpuPic; //placed on a variable the const value of cpuPic
+		document.getElementById('player2Pokemon').classList.add('player2-active');
 	}
 	//output for images, name, type and level
+
 	x.innerHTML = pokemon.name;
 	y.innerHTML = pokemon.type;
 	z.innerHTML = pokemon.level;
@@ -128,14 +131,33 @@ function selectPokemon(pokemon) {
 
 // function to get the value of player or CPU
 function characterSelection(player) {
-	if (player == "player1") {
+
+	//check if player selection is active
+	let player1Active = document.getElementById('player1Pokemon').classList.contains('player1-active');
+	let player2Active = document.getElementById('player2Pokemon').classList.contains('player2-active');
+
+
+	if  ( player == "player1" && player1Active ) {
 		//onclick function to get the data attribute of player
 		playerLockIn.setAttribute("data-selected-pokemon", pokeName.innerText);
+		document.querySelector("#player1Pokemon .lockin").setAttribute('style', 'display:none');
 		document.querySelector("#pick-message").innerHTML = "Select Your Opponent";
+
+	} else if ( player == "player2" ) {
+		if ( player2Active ) {
+			//onclick function to get the data attribute of player
+			cpuLockIn.setAttribute("data-selected-pokemon", pokeName.innerText);
+			document.querySelector("#player2Pokemon .lockin").setAttribute('style', 'display:none');
+			document.querySelector("#pick-message").innerHTML = 'Please Click "Select Arena"';
+			document.getElementById("go-arena").setAttribute('style', 'display:block');
+		} else {
+			alert('Please select pokemon for player 2');
+			return;
+		}
 	} else {
-		//onclick function to get the data attribute of player
-		cpuLockIn.setAttribute("data-selected-pokemon", pokeName.innerText);
-		document.querySelector("#pick-message").innerHTML =
-			'Please Click "Select Arena"';
+		alert('Please select pokemon for player 1');
+		return;
 	}
 }
+
+

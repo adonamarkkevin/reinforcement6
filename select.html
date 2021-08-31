@@ -21,7 +21,7 @@
 						<li class="list-item"><span class="key">Level:</span> <span id="lValue"></span></li>
 					</ul>
 				</div>
-				<div class="charPic">
+				<div class="charPic" id="player1Pokemon">
 					<img src="images/charBanner.png" class="character-pic">
 					<a class="btn btn-outline-primaidry lockin" id="heroSelected" onclick="characterSelection('player1')">Lock In</a>
 				</div>
@@ -82,14 +82,14 @@
 						<li class="list-item"><span class="key">Level:</span> <span id="cpuLvl"></span></li>
 					</ul>
 				</div>
-				<div class="charPic">
+				<div class="charPic" id="player2Pokemon">
 					<img src="images/charBanner.png" class="opponent-pic">
 					<a class="btn btn-outline-primary lockin" id="opponentSelected" onclick="characterSelection('player2')">Lock In</a>
 				</div>
 			</div>
 
 			<div class="proceed-bttn">
-				<a href="arena.html" class="btn btn-outline-primary proceed">Select Arena</a>
+				<a id="go-arena" href="arena.html" class="btn btn-outline-primary proceed">Select Arena</a>
 				<a href="index.html" class="btn btn-outline-primary proceed">Cancel</a>
 			</div>
 		</div>
