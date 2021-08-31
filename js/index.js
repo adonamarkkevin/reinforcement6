@@ -103,8 +103,18 @@ function loadingScreen() {
 
 function showPage() {
 	document.getElementById("loader").style.display = "none";
+	document.getElementById("containerAfter").style.display = "flex";
 }
 
+//loading battle screen
+function loadingScreenBattle() {
+	setTimeout(showPageBattle, 6000);
+}
+
+function showPageBattle() {
+	document.getElementById("vsLoader").style.display = "none";
+	document.getElementById("battleContainer").style.display = "flex";
+}
 //select pokemon funtion
 function selectPokemon(pokemon) {
 	if (playerLockIn.hasAttribute("data-selected-pokemon") !== true) {
@@ -113,20 +123,22 @@ function selectPokemon(pokemon) {
 		var y = pokeType; //placed on a variable the const value of pokeType
 		var z = pokeLevel; //placed on a variable the const value of pokeLevel
 		var p = pokePic; //placed on a variable the const value of pokePic
+		document.getElementById("player1Pokemon").classList.add("player1-active");
 	} else {
 		var x = cpuName; //placed on a variable the const value of cpuName
 		var y = cpuType; //placed on a variable the const value of cpuType
 		var z = cpuLevel; //placed on a variable the const value of cpuLevel
 		var p = cpuPic; //placed on a variable the const value of cpuPic
+		document.getElementById("player2Pokemon").classList.add("player2-active");
 	}
 	//output for images, name, type and level
+
 	x.innerHTML = pokemon.name;
 	y.innerHTML = pokemon.type;
 	z.innerHTML = pokemon.level;
 	p.src = pokemon["imageFront"];
 }
 
-// function to get the value of player or CPU
 // function to get the value of player or CPU
 function characterSelection(player) {
 	//check if player selection is active
