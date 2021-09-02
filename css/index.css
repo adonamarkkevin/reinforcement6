@@ -435,3 +435,20 @@ label.playerChoices:hover {
 #vsloader {
 	background-image: url();
 }
+#footertitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+#footerparagraph {
+	text-align: center;
+}
+footer {
+	background: rgb(203, 97, 48);
+	background: linear-gradient(
+		0deg,
+		rgba(203, 97, 48, 1) 33%,
+		rgba(253, 187, 45, 1) 100%
+	);
+	color: #fff;
+}
