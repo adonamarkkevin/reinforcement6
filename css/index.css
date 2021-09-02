@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Source+Code+Pro:wght@200&family=Vast+Shadow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Source+Code+Pro:wght@200&family=Vast+Shadow&display=swap");
+
+
 
 .home-container {
 	background-image: url(../images/home-bg.jpg);
@@ -14,60 +16,71 @@
 	justify-content: center;
 }
 
-a.btn.start, a.btn.proceed, a.btn.lockin, a.btn.end {
+a.btn.start,
+a.btn.proceed,
+a.btn.lockin,
+a.btn.end {
 	box-shadow: 0px 6px 17px 2px #232323;
-    margin: 0;
-    border-radius: 20px;
-    width: 500px;
-    height: auto;
-    font-size: 50px;
-    border: 14px solid #732828;
-	background: rgb(203,97,48);
-    background: linear-gradient(0deg, rgba(203,97,48,1) 33%, rgba(253,187,45,1) 100%);
-    font-family: 'Bungee', cursive;
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+	margin: 0;
+	border-radius: 20px;
+	width: 500px;
+	height: auto;
+	font-size: 50px;
+	border: 14px solid #732828;
+	background: rgb(203, 97, 48);
+	background: linear-gradient(
+		0deg,
+		rgba(203, 97, 48, 1) 33%,
+		rgba(253, 187, 45, 1) 100%
+	);
+	font-family: "Bungee", cursive;
+	padding: 20px;
+	color: #fff;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
 }
 
 a.btn.start:hover,
 a.btn.proceed:hover,
 a.btn.lockin:hover,
-a.btn.end:hover  {
+a.btn.end:hover {
 	background: #cb6130;
 }
 
- a.btn.end {
-    border: 0;
-    width: 70px;
-    border-radius: 50px;
-    font-size: 18px;
-    background: linear-gradient(0deg, rgb(203 97 48 / 57%) 33%, rgb(253 187 45 / 50%) 100%);
- }
+a.btn.end {
+	border: 0;
+	width: 70px;
+	border-radius: 50px;
+	font-size: 18px;
+	background: linear-gradient(
+		0deg,
+		rgb(203 97 48 / 57%) 33%,
+		rgb(253 187 45 / 50%) 100%
+	);
+}
 
 a.btn.lockin {
-	width: 	100%;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 10px;
-    border: 3px solid #732828;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 10px;
+	border: 3px solid #732828;
 }
 
 .battle-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
 }
 
 #playerLockIn:disabled {
-	z-index:-1;            
-    position:relative;
-    opacity: .5;
+	z-index: -1;
+	position: relative;
+	opacity: 0.5;
 	filter: grayscale(100%);
 }
 
@@ -105,13 +118,13 @@ a.btn.lockin {
 }
 
 .charPic img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .charAttrributes {
 	width: 20%;
-	padding: 0 15px; 
+	padding: 0 15px;
 }
 
 .selectionChar {
@@ -119,22 +132,24 @@ a.btn.lockin {
 }
 
 .charAttrributes li {
-	font-family: 'Source Code Pro', monospace;
-	font-weight: bold;
+	font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+    font-size: 13px;
+    color: #000;
 }
 
 .selectionChar .form-group {
-    display: block;
-    width: 29%;
-    height: 80px;
-    border: 4px solid #732828 !important;
-    border-radius: 5px;
-    padding: 15px;
-    background: #e9e4e1;
-    transition: all ease 0.5s;
-    position: relative;
-    overflow: hidden;
-    margin: 0 0 15px;
+	display: block;
+	width: 29%;
+	height: 80px;
+	border: 4px solid #732828 !important;
+	border-radius: 5px;
+	padding: 15px;
+	background: #e9e4e1;
+	transition: all ease 0.5s;
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 15px;
 }
 
 .selectionChar .form-group input {
@@ -145,27 +160,27 @@ a.btn.lockin {
 
 .selectionChar .form-group img {
 	width: 40px;
-    height: auto;
-    margin: auto;
+	height: auto;
+	margin: auto;
 }
 
 .charAttrributes ul {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 label.playerChoices {
 	position: absolute;
-    width: 100%;
-    height: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    display: flex;
-    align-items: center;
+	width: 100%;
+	height: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
 	cursor: pointer;
-	transition: .3s;
+	transition: 0.3s;
 }
 
 label.playerChoices:hover {
@@ -174,11 +189,11 @@ label.playerChoices:hover {
 
 .justify-content-around {
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 #loader {
-	background: url('../images/evolve.gif'), #000;
+	background: url("../images/evolve.gif"), #000;
 	background-repeat: no-repeat;
 	background-size: 25%;
 	background-position: center;
@@ -188,35 +203,34 @@ label.playerChoices:hover {
 
 .proceed-bttn {
 	width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
 }
 
 .proceed-bttn a.btn.proceed {
-    width: 200px;
-    height: auto;
-    font-size: 20px;
-    border: 9px solid #732828;
-    padding: 10px;
-    margin: 0 15px;
+	width: 200px;
+	height: auto;
+	font-size: 20px;
+	border: 9px solid #732828;
+	padding: 10px;
+	margin: 0 15px;
 }
 
 .title-section {
-	font-family: 'Bungee', cursive;
+	font-family: "Bungee", cursive;
 	color: #232323;
 	font-size: 18px;
 	text-align: center;
 }
 
 .arena {
-	width: 100% !important;
-	margin: 50px 0;
+	margin: 50px 0 !important;
 }
 
-.slick-slide img {
-    width: 100%;
+.arena img {
+	width: 100%;
 }
 
 .arena-items {
@@ -224,8 +238,8 @@ label.playerChoices:hover {
 	border: 4px solid #732828 !important;
 	border-radius: 5px;
 	filter: grayscale(100%);
-	transition: .3s;
-    width: 350px !important;
+	/*width: 400px !important;*/
+	transition: 0.3s;
 }
 
 .arena-items:hover {
@@ -233,52 +247,61 @@ label.playerChoices:hover {
 	filter: grayscale(0);
 }
 
-.vs-loader .meter { 
-    height: 60px;
-    position: relative;
-    background: #ddd;
-    overflow: hidden;
-    border: 5px solid #732828;
-    width: 70%;
-    margin: auto;
-    border-radius: 50px;
+.vs-loader .meter {
+	height: 60px;
+	position: relative;
+	background: #ddd;
+	overflow: hidden;
+	border: 5px solid #732828;
+	width: 70%;
+	margin: auto;
+	border-radius: 50px;
 }
 
 .vs-loader .meter span {
-    height: 100%;
-    display: flex;
-    align-items: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .vs-loader .progress {
-    background: rgb(203,97,48);
-    background: linear-gradient(0deg, rgba(203,97,48,1) 33%, rgba(253,187,45,1) 100%);
-    animation: progressBar 5s ease-in-out;
-    animation-fill-mode:both; 
+	background: rgb(203, 97, 48);
+	background: linear-gradient(
+		0deg,
+		rgba(203, 97, 48, 1) 33%,
+		rgba(253, 187, 45, 1) 100%
+	);
+	animation: progressBar 5s ease-in-out;
+	animation-fill-mode: both;
 	animation-delay: 1s;
 }
 
 @keyframes progressBar {
-	0% { width: 0; }
-	100% { width: 100%; }
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
 }
 
 .vs-loader {
-    height: 100vh;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    background-position: bottom center !important;
+	height: 100vh;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	background-position: bottom center !important;
 }
 
-.loadng-title, .arena-title {
-	font-family: 'Bungee', cursive;
+.loadng-title,
+.arena-title {
+	font-family: "Bungee", cursive;
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -287,10 +310,10 @@ label.playerChoices:hover {
 .loadng-title {
 	margin-bottom: 50px;
 	font-size: 52px;
-    background: #732828cf;
-    padding: 15px;
-    width: auto;
-    display: inline-block;
+	background: #732828cf;
+	padding: 15px;
+	width: auto;
+	display: inline-block;
 }
 
 .arena-title {
@@ -300,110 +323,404 @@ label.playerChoices:hover {
 }
 
 .loader-container {
-    width: 50%;
-    margin: auto;
-    text-align: center;
+	width: 50%;
+	margin: auto;
+	text-align: center;
 }
 
 .battle-container {
 	height: 100vh;
 	width: 100%;
 	display: none;
-    align-items: flex-end;
-    justify-content: center;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    background-position: bottom center !important;
+	align-items: flex-end;
+	justify-content: center;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	background-position: bottom center !important;
 }
 
 .battle-content {
-    width: 50%;
-    height: 560px;
-    padding: 50px;
-    margin: 20px;
-    position: relative;
+	width: 50%;
+	height: 80%;
+	padding: 50px;
+	margin: 20px;
+	position: relative;
 }
 
 .battle-content .palyer-one {
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .battle-content .palyer-two {
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .battle-content .status-bar {
-    width: 80%;
-    background: #fff;
-    padding: 7px;
-    border: 3px solid #732828;
-    border-radius: 5px;
-    margin: auto;
+	width: 80%;
+	background: #fff;
+	padding: 7px;
+	border: 3px solid #732828;
+	border-radius: 5px;
+	margin: auto;
 }
 
 .battle-content .status-bar .name,
 .battle-content .status-bar .hp-title {
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 14px;
-    margin-bottom: 5px;
-    font-family: 'Source Code Pro', monospace;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-family: "Source Code Pro", monospace;
 }
 
 .battle-content .avatar {
-    width: 100%;
-    margin: 15px auto;
-    display: block;
+	width: 350px;
+	margin: 15px auto;
+	display: block;
 }
 
 .battle-content .palyer-two .avatar {
-    width: 200px;
+	width: 200px;
 }
 
-#containerAfter {
+#containerAfter, .before-load {
 	display: none;
 }
 
 .ch-info {
-    display: flex;
-    align-items: center;
-    flex-wrap: unset;
-    border: 1px solid #ffff34;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-wrap: unset;
+	border: 1px solid #ffff34;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .battle-content .status-bar .hp-title {
-    background: #ffff34;
-    padding: 0px 15px;
-    font-size: 12px;
-    width: 10%;
-    margin-bottom: 0;
+	background: #ffff34;
+	padding: 0px 15px;
+	font-size: 12px;
+	width: 10%;
+	margin-bottom: 0;
 }
 
 .battle-content .status-bar .progress.hp {
-    width: 90%;
-    height: 17px;
-    border-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+	width: 90%;
+	height: 17px;
+	border-radius: 0;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .character-image {
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.slick-track {
-    width: 6736px !important;
-    left: -380px;
+#go-arena {
+	display: none;
+}
+
+footer {
+	background: #232323;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
+
+footer p {
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.arena-main {
+    padding: 100px 50px;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    flex-wrap: unset;
+    align-items: unset;
+    justify-content: unset;
+    overflow: hidden;
+    background-image: url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-container {
+	padding: 50px;
+    width: 70%;
+    margin: auto;
+    background-color: #ffead99e;
+	border: 20px solid #229eaf;
+	border-radius: 15px;
+}
+
+.main-container .title-section {
+	font-size: 32px;
+}
+
+.body-class {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.body-class footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.body-class #loader {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.attack img {
+	width: 100%;
+}
+
+a.proceed.attack {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 8px solid #732828;
+}
+
+.palyer-one {
+	position: relative;
+}
+
+.attack-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+@media only screen and (max-width: 1350px) {
+	.selectionChar {
+	    width: 100%;
+	    order: 2;
+	}
+
+	.container-main {
+		justify-content: space-around;
+	}
+
+	.container-main .charAttrributes {
+		margin-bottom: 25px;
+	}
+
+	.proceed-bttn {
+		order: 3;	
+	}
+
+	.character-image {
+	    height: 190px;
+	}
+
+	.selectChar-main {
+		height: auto !important;
+		padding: 15px 25px;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	.container-main {
+		justify-content: space-between;
+	}
+
+	.main-container {
+	    width: 100%;
+	}
+
+	.battle-content {
+	    width: 70%;
+	    height: 90%;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.vs-loader .meter {
+		width: 100%;
+	}
+
+	.main-container {
+		padding: 20px;
+	    border: 10px solid #229eaf;
+	}
+
+	.main-container .title-section {
+	    font-size: 22px;
+	}
+
+	.arena {
+	    margin-top: 0 !important;
+	}
+
+	a.btn.start, a.btn.proceed, a.btn.lockin, a.btn.end {
+	    border-radius: 10px;
+	    width: 100%;
+	    font-size: 30px;
+	    border: 7px solid #732828;
+	}
+
+	.charPic a.btn.lockin {
+		font-size: 14px;
+	}
+
+	.charAttrributes {
+	    width: 30%;
+	}
+
+	.arena-main {
+	    padding: 10px 20px;
+	    width: 100%;
+	}
+
+	.attack img {
+		width: 100%;
+	}
+
+	a.proceed.attack {
+	    border-radius: 50px;
+	    width: 100px;
+	    height: 100px;
+	    font-size: 50px;
+	    border: 8px solid #732828;
+	}
+
+	.palyer-one {
+		position: relative;
+	}
+
+	.attack-btn {
+	    position: absolute;
+	    bottom: 40px;
+	    right: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.battle-content .status-bar {
+		width: 100%;
+	}
+
+	.charAttrributes {
+	    width: 50%;
+	}	
+
+	.charPic img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.loader-container {
+	    width: 80%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.battle-content .palyer-two,
+	.battle-content .palyer-one {
+		width: 100%;
+	}
+
+	.battle-content .palyer-one .avatar {
+	    width: 80%;
+	}
+
+	.battle-container {
+	    justify-content: flex-start;
+	}
+
+	.arena-main {
+    	align-items: flex-start;
+	}
+
+	.main-container {
+		margin-top: 0;
+	}
+
+	.charAttrributes {
+	    width: 100%;
+	}	
+
+	.charPic img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.charAttrributes:nth-child(1) {
+		order: 1;
+	}
+
+	.selectionChar {
+	    width: 100%;
+	    order: 2;
+	}
+
+	.charAttrributes:nth-child(3) {
+		order: 3;
+	}
+
+	.proceed-bttn {
+		order: 4;	
+	}
+
+	.charPic img {
+	    width: 140px;
+	    height: auto;
+	}
+
+	.home-container, .selectChar-main {
+	    height: 100vh;
+	    background-attachment: fixed;
+	    padding: 50px 15px;
+	}
+
+	.selectChar-main {
+		height: auto;
+		padding: 15px 25px;
+	}
+
+	.selectionChar {
+	    width: 100%;
+	    order: 2;
+	    margin: 50px 0;
+	}
+
+	.proceed-bttn a.btn.proceed {
+	    width: 100%;
+	    margin-bottom: 14px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.selectionChar .form-group {
+	    width: 48%;
+	}
+
+	.container-main {
+	    background-color: #ffffffe0;
+	    padding: 20px;
+	    width: 100%;
+	}
 }
