@@ -118,7 +118,7 @@ function loadingScreen() {
 
 function showPage() {
 	document.getElementById("loader").style.display = "none";
-	document.getElementById("containerAfter").style.display = "flex";
+	document.getElementsByClassName("before-load")[0].style.display = "flex";
 }
 
 //loading battle screen

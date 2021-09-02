@@ -14,7 +14,7 @@
 	</head>
 	<body onload="loadingScreen()">
 		<div id="loader" class="loader"></div>
-		<div class="selectChar-main">
+		<div class="selectChar-main before-load">
 			<div class="container-main">
 				<div class="charAttrributes">
 					<div class="charDetails">
@@ -31,7 +31,9 @@
 						</ul>
 					</div>
 					<div class="charPic" id="player1Pokemon">
-						<img src="images/charBanner.png" class="character-pic" />
+						<div class="character-image ">
+							<img src="images/charBanner.png" class="character-pic" />
+						</div>
 						<a
 							class="btn btn-outline-primaidry lockin"
 							id="heroSelected"
@@ -165,7 +167,9 @@
 						</ul>
 					</div>
 					<div class="charPic" id="player2Pokemon">
-						<img src="images/charBanner.png" class="opponent-pic" />
+						<div class="character-image ">
+							<img src="images/charBanner.png" class="opponent-pic" />
+						</div>
 						<a
 							class="btn btn-outline-primary lockin"
 							id="opponentSelected"
