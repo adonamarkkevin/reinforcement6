@@ -116,6 +116,10 @@ function loadingScreen() {
 	setTimeout(showPage, 3500);
 }
 
+function gameStart() {
+	localStorage.setItem("arena", chosenArena.innerHTML);
+}
+
 function showPage() {
 	document.getElementById("loader").style.display = "none";
 	document.getElementsByClassName("before-load")[0].style.display = "flex";
@@ -225,10 +229,6 @@ function selectArena(arena) {
 			.querySelector("#game-start")
 			.setAttribute("style", "display:block");
 	}
-}
-
-function gameStart() {
-	localStorage.setItem("arena", chosenArena.innerHTML);
 }
 
 // function to remove data in localstorage via exit

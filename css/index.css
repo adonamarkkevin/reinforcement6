@@ -425,7 +425,8 @@ label.playerChoices:hover {
 	justify-content: center;
 }
 
-#go-arena {
+#go-arena,
+#game-start {
 	display: none;
 }
 
