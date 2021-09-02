@@ -12,13 +12,9 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 	<body onload="loadingScreenBattle()">
-		<div
-			class="vs-loader"
-			id="vsLoader"
-			style="background: url('./images/volcano.jpg')"
-		>
+		<div class="vs-loader" id="vsLoader">
 			<div class="loader-container">
-				<h1 class="loadng-title">Volcano</h1>
+				<h1 class="loadng-title"></h1>
 
 				<div class="meter">
 					<span style="width: 100%"
@@ -30,18 +26,14 @@
 			</div>
 		</div>
 
-		<div
-			class="battle-container"
-			id="battleContainer"
-			style="background: url('./images/volcano.jpg')"
-		>
+		<div class="battle-container" id="battleContainer">
 			<div class="battle-content">
 				<div class="palyer-one">
 					<div class="character">
-						<img src="./images/charmanderBack.gif" class="avatar" />
+						<img src="" class="avatar" id="player-avatar" />
 					</div>
 					<div class="status-bar">
-						<p class="name">pokemon</p>
+						<p class="name" id="p1-name"></p>
 						<div class="ch-info">
 							<span class="hp-title">HP</span>
 							<div class="progress hp">
@@ -57,7 +49,7 @@
 
 				<div class="palyer-two">
 					<div class="status-bar">
-						<p class="name">pokemon</p>
+						<p class="name" id="p2-name"></p>
 						<div class="ch-info">
 							<span class="hp-title">HP</span>
 							<div class="progress hp">
@@ -70,13 +62,15 @@
 						</div>
 					</div>
 					<div class="character">
-						<img src="./images/venusaurFront.gif" class="avatar" />
+						<img src="" class="avatar" id="cpu-avatar" />
 					</div>
 				</div>
 			</div>
 
 			<div class="battle-btn">
-				<a href="index.html" class="btn btn-outline-primary end">x</a>
+				<a href="index.html" class="btn btn-outline-primary end" id="exit-btn"
+					>x</a
+				>
 			</div>
 		</div>
 

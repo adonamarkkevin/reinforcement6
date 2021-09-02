@@ -427,6 +427,11 @@ label.playerChoices:hover {
 	width: 6736px !important;
 	left: -380px;
 }
-#go-arena {
+#go-arena,
+#game-start {
 	display: none;
+}
+
+#vsloader {
+	background-image: url();
 }
