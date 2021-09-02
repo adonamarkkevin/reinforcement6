@@ -123,8 +123,8 @@ function showPage() {
 
 //loading battle screen
 function loadingScreenBattle() {
-	// document.getElementById("vsloader").style.backgroundImage = bg["background"];
-	// document.getElementsByClassName("loadng-title").innerHTML = bg.bgName;
+	document.getElementById("vsLoader").style.backgroundImage = `url('${bgImg}')`;
+	document.getElementById("load-title").innerHTML = `${battleArena}`;
 	setTimeout(showPageBattle, 6000);
 }
 
