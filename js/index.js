@@ -207,11 +207,11 @@ function characterSelection(player) {
 				.getElementById("go-arena")
 				.setAttribute("style", "display:block");
 		} else {
-			alert("Please select pokemon for player 2");
+			Swal.fire("Can't Proceed", "Please Select Player 2", "error");
 			return;
 		}
 	} else {
-		alert("Please select pokemon for player 1");
+		Swal.fire("Can't Proceed", "Please Select Player 1", "error");
 		return;
 	}
 }

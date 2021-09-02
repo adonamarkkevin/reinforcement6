@@ -131,9 +131,9 @@ a.btn.lockin {
 
 .charAttrributes li {
 	font-family: "Source Code Pro", monospace;
-    font-weight: 900;
-    font-size: 13px;
-    color: #000;
+	font-weight: 900;
+	font-size: 13px;
+	color: #000;
 }
 
 .selectionChar .form-group {
@@ -388,7 +388,8 @@ label.playerChoices:hover {
 	width: 200px;
 }
 
-#containerAfter, .before-load {
+#containerAfter,
+.before-load {
 	display: none;
 }
 
@@ -430,9 +431,9 @@ label.playerChoices:hover {
 
 footer {
 	background: #232323;
-    text-align: center;
-    color: #fff;
-    padding: 5px 0;
+	text-align: center;
+	color: #fff;
+	padding: 5px 0;
 }
 
 footer p {
@@ -441,16 +442,16 @@ footer p {
 }
 
 .arena-main {
-    padding: 100px 50px;
-    width: 100%;
-    margin: auto;
-    height: 100vh;
-    flex-wrap: unset;
-    align-items: unset;
-    justify-content: unset;
-    overflow: hidden;
-    background-image: url(../images/home-bg.jpg);
-    background-repeat: no-repeat;
+	padding: 100px 50px;
+	width: 100%;
+	margin: auto;
+	height: 100vh;
+	flex-wrap: unset;
+	align-items: unset;
+	justify-content: unset;
+	overflow: hidden;
+	background-image: url(../images/home-bg.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
@@ -460,9 +461,9 @@ footer p {
 
 .main-container {
 	padding: 50px;
-    width: 70%;
-    margin: auto;
-    background-color: #ffead99e;
+	width: 70%;
+	margin: auto;
+	background-color: #ffead99e;
 	border: 20px solid #229eaf;
 	border-radius: 15px;
 }
@@ -485,10 +486,10 @@ footer p {
 }
 
 .body-class #loader {
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
 }
 
 .attack img {
@@ -496,11 +497,11 @@ footer p {
 }
 
 a.proceed.attack {
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    border: 8px solid #732828;
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	font-size: 50px;
+	border: 8px solid #732828;
 }
 
 .palyer-one {
@@ -508,14 +509,15 @@ a.proceed.attack {
 }
 
 .attack-btn {
-    position: absolute;
-    bottom: 40px;
-    right: 0;
+	position: absolute;
+	bottom: 40px;
+	right: 0;
 }
+
 @media only screen and (max-width: 1350px) {
 	.selectionChar {
-	    width: 100%;
-	    order: 2;
+		width: 100%;
+		order: 2;
 	}
 
 	.container-main {
@@ -527,11 +529,11 @@ a.proceed.attack {
 	}
 
 	.proceed-bttn {
-		order: 3;	
+		order: 3;
 	}
 
 	.character-image {
-	    height: 190px;
+		height: 190px;
 	}
 
 	.selectChar-main {
@@ -546,12 +548,12 @@ a.proceed.attack {
 	}
 
 	.main-container {
-	    width: 100%;
+		width: 100%;
 	}
 
 	.battle-content {
-	    width: 70%;
-	    height: 90%;
+		width: 70%;
+		height: 90%;
 	}
 }
 
@@ -562,22 +564,25 @@ a.proceed.attack {
 
 	.main-container {
 		padding: 20px;
-	    border: 10px solid #229eaf;
+		border: 10px solid #229eaf;
 	}
 
 	.main-container .title-section {
-	    font-size: 22px;
+		font-size: 22px;
 	}
 
 	.arena {
-	    margin-top: 0 !important;
+		margin-top: 0 !important;
 	}
 
-	a.btn.start, a.btn.proceed, a.btn.lockin, a.btn.end {
-	    border-radius: 10px;
-	    width: 100%;
-	    font-size: 30px;
-	    border: 7px solid #732828;
+	a.btn.start,
+	a.btn.proceed,
+	a.btn.lockin,
+	a.btn.end {
+		border-radius: 10px;
+		width: 100%;
+		font-size: 30px;
+		border: 7px solid #732828;
 	}
 
 	.charPic a.btn.lockin {
@@ -585,12 +590,12 @@ a.proceed.attack {
 	}
 
 	.charAttrributes {
-	    width: 30%;
+		width: 30%;
 	}
 
 	.arena-main {
-	    padding: 10px 20px;
-	    width: 100%;
+		padding: 10px 20px;
+		width: 100%;
 	}
 
 	.attack img {
@@ -598,11 +603,11 @@ a.proceed.attack {
 	}
 
 	a.proceed.attack {
-	    border-radius: 50px;
-	    width: 100px;
-	    height: 100px;
-	    font-size: 50px;
-	    border: 8px solid #732828;
+		border-radius: 50px;
+		width: 100px;
+		height: 100px;
+		font-size: 50px;
+		border: 8px solid #732828;
 	}
 
 	.palyer-one {
@@ -610,9 +615,9 @@ a.proceed.attack {
 	}
 
 	.attack-btn {
-	    position: absolute;
-	    bottom: 40px;
-	    right: 0;
+		position: absolute;
+		bottom: 40px;
+		right: 0;
 	}
 }
 
@@ -622,16 +627,16 @@ a.proceed.attack {
 	}
 
 	.charAttrributes {
-	    width: 50%;
-	}	
+		width: 50%;
+	}
 
 	.charPic img {
-	    width: 100%;
-	    height: 100%;
+		width: 100%;
+		height: 100%;
 	}
 
 	.loader-container {
-	    width: 80%;
+		width: 80%;
 	}
 }
 
@@ -642,15 +647,15 @@ a.proceed.attack {
 	}
 
 	.battle-content .palyer-one .avatar {
-	    width: 80%;
+		width: 80%;
 	}
 
 	.battle-container {
-	    justify-content: flex-start;
+		justify-content: flex-start;
 	}
 
 	.arena-main {
-    	align-items: flex-start;
+		align-items: flex-start;
 	}
 
 	.main-container {
@@ -658,12 +663,12 @@ a.proceed.attack {
 	}
 
 	.charAttrributes {
-	    width: 100%;
-	}	
+		width: 100%;
+	}
 
 	.charPic img {
-	    width: 100%;
-	    height: 100%;
+		width: 100%;
+		height: 100%;
 	}
 
 	.charAttrributes:nth-child(1) {
@@ -671,8 +676,8 @@ a.proceed.attack {
 	}
 
 	.selectionChar {
-	    width: 100%;
-	    order: 2;
+		width: 100%;
+		order: 2;
 	}
 
 	.charAttrributes:nth-child(3) {
@@ -680,18 +685,19 @@ a.proceed.attack {
 	}
 
 	.proceed-bttn {
-		order: 4;	
+		order: 4;
 	}
 
 	.charPic img {
-	    width: 140px;
-	    height: auto;
+		width: 140px;
+		height: auto;
 	}
 
-	.home-container, .selectChar-main {
-	    height: 100vh;
-	    background-attachment: fixed;
-	    padding: 50px 15px;
+	.home-container,
+	.selectChar-main {
+		height: 100vh;
+		background-attachment: fixed;
+		padding: 50px 15px;
 	}
 
 	.selectChar-main {
@@ -700,25 +706,25 @@ a.proceed.attack {
 	}
 
 	.selectionChar {
-	    width: 100%;
-	    order: 2;
-	    margin: 50px 0;
+		width: 100%;
+		order: 2;
+		margin: 50px 0;
 	}
 
 	.proceed-bttn a.btn.proceed {
-	    width: 100%;
-	    margin-bottom: 14px;
+		width: 100%;
+		margin-bottom: 14px;
 	}
 }
 
 @media only screen and (max-width: 580px) {
 	.selectionChar .form-group {
-	    width: 48%;
+		width: 48%;
 	}
 
 	.container-main {
-	    background-color: #ffffffe0;
-	    padding: 20px;
-	    width: 100%;
+		background-color: #ffffffe0;
+		padding: 20px;
+		width: 100%;
 	}
 }
