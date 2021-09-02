@@ -231,4 +231,9 @@ function gameStart() {
 	localStorage.setItem("arena", chosenArena.innerHTML);
 }
 
-function exit(params) {}
+// function to remove data in localstorage via exit
+function clearLocalStorage() {
+	localStorage.removeItem("pokePlayer");
+	localStorage.removeItem("pokeCPU");
+	localStorage.removeItem("arena");
+}
